@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Ocean1 {
 
     @Autowired
-    @Qualifier("island2")
+    @Qualifier("island2") // 2 бина могут быть связаны island2 и getIsland, поэтому уточняем какой будем связывать
     private Island2 island;
 
     @Override
